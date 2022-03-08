@@ -1,0 +1,85 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+
+/* GLOBAL ELEMENT STYLING */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+    font-family: 'lato', sans-serif;
+    background-color: #eee;
+}
+
+#page-wrapper{
+    position: relative;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* GLOBAL CLASSES STYLING */
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 60vw;
+}
+
+@media (max-width:650px){
+    .logo{
+        margin-top:15px;
+        width: 100%;
+        position: relative;
+    }
+    #header{
+        flex-wrap: wrap;
+    }
+}
+.logo > img{
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+    .logo > img {
+      margin: 0 auto;
+    }
+  }
+
+nav{
+    font-weight: 400;
+}
+@media
